@@ -1,0 +1,114 @@
+<style>
+    body {
+        background-color: rgb(17 24 39 / 1);
+        perspective: 1000px;
+        transform-style: preserve-3d;
+        display: flex;
+        height: 100vh;
+        font-family: "Playfair Display", georgia, serif;
+    }
+
+    .test {
+        position: absolute;
+        left: calc(50% - 4rem);
+        top: 10px;
+        z-index: -10;
+        will-change: transform;
+        transform: translateZ(0);
+        filter: blur(4.5rem);
+    }
+
+    @media (min-width: 640px) {
+        .test {
+            left: calc(50% - 18rem);
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .test {
+            left: 48px;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .test {
+            top: calc(50% - 30rem);
+        }
+    }
+
+    @media (min-width: 1280px) {
+        .test {
+            left: calc(50% - 24rem);
+        }
+    }
+
+
+    .forma {
+        width: 1108px;
+        height: 632px;
+        width: 69.25rem;
+        background: linear-gradient(to right, #80caff, #4f46e5);
+        opacity: 0.2;
+    }
+
+    .div-container {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        max-width: 2xl;
+        flex-direction: column;
+        gap: 16px;
+        background-color: rgba(172, 160, 160, 0.116);
+        padding-left: 6px;
+        padding-right: 6px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        border-radius: 1.5rem;
+        /* 3xl en sm */
+        padding: 8px;
+        /* p-8 en sm */
+    }
+
+    @media (min-width: 640px) {
+        .div-container {
+            border-radius: 1.5rem;
+            /* 3xl en sm */
+            padding: 8px;
+            /* p-8 en sm */
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .div-container {
+            margin-left: 0;
+            max-width: none;
+            flex-direction: row;
+            align-items: center;
+            padding-top: 20px;
+            /* py-20 en lg */
+        }
+    }
+
+    @media (min-width: 1280px) {
+        .div-container {
+            gap: 20px;
+            /* xl:gap-x-20 en xl */
+            padding-left: 20px;
+            /* xl:px-20 en xl */
+            padding-right: 20px;
+            /* xl:px-20 en xl */
+        }
+    }
+</style>
+
+<body>
+
+    <div class="test" aria-hidden="true">
+        <div class="forma"
+            style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%);">
+        </div>
+    </div>
+    <div class="div-container">
+
+    </div>
+</body>
